@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>JavaScript Exercises</title>
+
+		<script>
+		var number1 = 5;
+		var number2 = 5;
+		var number3 = 3;
+
+		// document.write(price1);
+
+		// window.alert(price1);
+		// console.log(price1);
+
+		document.write('Number squared = ',mySquareFunction(number1) + '<br>');
+
+		function mySquareFunction(number1) {
+		return number1*number1;
+		};
+
+
+
+		document.write('Numbers added = ',myAddFunction(number1,number2,number3),'<br>');
+
+
+		function myAddFunction(number1,number2,number3) {
+		return number1+number2+number3;
+		};
+
+
+		var myObject = {name:'Jack',age:35,occupation:'GP'};
+
+		document.write(myObject.name,' ',myObject.age,' ',myObject.occupation,'<br>'); 
+
+		myObject.name = 'Paul';
+		myObject.age = 37;
+		myObject.occupation = 'Car Mechanic';
+	
+		document.write('     ',myObject.name,' ',myObject.age,' ',myObject.occupation,'  '); 
+
+
+
+		function addAge() {
+				myObject.age = myObject.age + 1;
+				document.write('New Age  ',myObject.age);
+		};		
+	
+
+
+
+		</script>
+
+
+
+</head>
+
+<body>
+<div id="main">
+
+
+		<button type = "button" onclick="addAge()">Click Me To Increase Age!</button>
+
+		<br />
+
+		<input type="button" value="Click Me" id="button" />
+		<input type="text" value="This is some text" id="text" style="width: 150px;" />
+
+
+</body>
+
+</html>
